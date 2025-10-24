@@ -38,28 +38,28 @@
     </nav>
 
     <section>
-      <h2>Viktig beskjed: Les dette! Klikk her! Klikk her! Klikk her! Veldig viktig!</h2>
+      <h2><a href="#">Les mer her for viktig informasjon ang eksamen</a></h2>
     </section>
 
-        <aside>
-          <section>
-            <h4>Nyheter</h4> <!-- bevisst: hopper over h1/h2/h3 -->
-            <p>
-              <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg" alt=""> <!-- bevisst: tom alt på meningsbærende bilde -->
-              <a class="tiny-link" href="#">Klikk her</a> for å lese mer om ting.
-            </p>
-            <p class="status-ok">Tilgjengelig</p>
-            <p class="status-bad">Utilgjengelig</p>
-          </section>
+    <aside>
+      <section>
+        <h4>Nyheter</h4> <!-- bevisst: hopper over h1/h2/h3 -->
+        <article>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg" alt=""> <!-- bevisst: tom alt på meningsbærende bilde -->
+          <a class="tiny-link" href="#">Klikk her</a> for å lese mer om ting.
+        </article>
+        <p class="status-ok">Tilgjengelig</p>
+        <p class="status-bad">Utilgjengelig</p>
+      </section>
 
-          <section>
-            <h4>Språk</h4>
-            <p>
-              <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Norway.svg" alt="no"> <!-- bevisst: alt «no» er ikke beskrivende -->
-              <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Flag_of_the_United_Kingdom.svg" alt="en">
-            </p>
-          </section>
-        </aside>
+      <section>
+        <h4>Språk</h4>
+        <ul>
+          <li><img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Norway.svg" alt="no" title="Norsk bokmål"></li>
+          <li><img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Flag_of_the_United_Kingdom.svg" alt="en" title="Engelsk"></li>
+        </ul>
+      </section>
+    </aside>
 
         <main>
           <h1>
@@ -102,41 +102,57 @@
             </form>
           </div>
 
-          <div class="card weird-order">
+          <article>
             <h4>Mer innhold</h4>
-            <p>
-              <a href="#" tabindex="3">Les mer</a> |
-              <a href="#" tabindex="1">Klikk her</a> |
-              <a href="#" tabindex="2">Trykk her</a>
-            </p>
-            <p>
-              <span class="btn" tabindex="4">Primær handling</span>
-            </p>
-          </div>
+            <ol>
+              <li><a href="#">Les mer om eksamensoppgave 1 her</a></li>
+              <li><a href="#">Mer informasjon om eksamensoppgave 2 finner du her</a></li>
+              <li><a href="#">Informasjon om eksamensoppgave 3 blir publisert her</a></li>
+            </ol>
+            <button>Start eksamen</button>
+          </article>
 
-          <div class="card">
+          <article>
             <h4>Tabell uten overskrifter</h4>
             <table>
-              <tr><td>1</td><td>2</td><td>3</td></tr>
-              <tr><td>4</td><td>5</td><td>6</td></tr>
-              <tr><td>7</td><td>8</td><td>9</td></tr>
+              <tbody>
+              <tr>
+                <th>Kolonne 1</th>
+                <th>Kolonne 2</th>
+                <th>Kolonne 3</th>
+              </tr>
+                <tr>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>5</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>8</td>
+                  <td>9</td>
+                </tr>
+              </tbody>
             </table>
-          </div>
+          </article>
 
-          <div class="card">
+          <article>
             <h4>Masse lenker med samme tekst</h4>
             <ul>
-              <li><a href="#">Les mer</a></li>
-              <li><a href="#">Les mer</a></li>
-              <li><a href="#">Les mer</a></li>
-              <li><a href="#">Les mer</a></li>
+              <li><a href="#">Oppgave om UU</a></li>
+              <li><a href="#">Oppgave om SEO</a></li>
+              <li><a href="#">Oppgave om Semantisk HTML</a></li>
+              <li><a href="#">Oppgave om CSS Grid og Flex</a></li>
             </ul>
-          </div>
+          </article>
           </section>
         </main>
 
     <footer>
-      <!-- bevisst: kontaktinfo kun i bilde uten alt-tekst -->
       <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Facebook_icon.svg" alt="facebook ikon for lenke til facebook side">
       <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Twitter_logo.svg" alt="twitter ikon for lenke til twitter side">
       <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="instagram ikon for lenke til instagram side">
